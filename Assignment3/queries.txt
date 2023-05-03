@@ -1,0 +1,28 @@
+create extension POSTGIS;
+create table locations (longitude float, latitude float, name varchar);
+
+insert into locations values(-118.2837474,34.0228997,'Trousdale Entrence');
+insert into locations values(-118.2868295,34.0214846,'Main entrance water work');
+insert into locations values(-118.2890218,34.020297,'Epstein family plaza water work');
+insert into locations values(-118.2847078,34.0203262,'Doheny Library');
+insert into locations values(-118.2829834,34.0213201,'Leavey Library');
+insert into locations values(-118.288788,34.0199482,'Seaver Science Library');
+insert into locations values(-118.2852642,34.0252617,'Usc village water work');
+insert into locations values(-118.2864772,34.0188723,'Trousdale End');
+insert into locations values(-118.2888022,34.0186761,'Watt way');
+insert into locations values(-118.2900255,34.0197993,'RTH Cafeteria');
+insert into locations values(-118.2861571,34.0202696,'Panda express');
+insert into locations values(-118.2824448,34.0212978,'Starbucks');
+insert into locations values(-118.2874196,34.0281688,'Home');
+
+ALTER TABLE locations ADD COLUMN geom geometry(Point, 4326);
+UPDATE locations SET geom = ST_SetSRID(ST_MakePoint(longitude, latitude), 4326);
+
+
+select st_astext(st_convexhull(locations.geom)) from locations;
+
+
+SELECT  locations.name,
+ST_Distance(locations.geom, 'POINT(-118.2874196 34.0281688)'::geography) dist
+FROM locations
+ORDER BY locations.geom <-> 'POINT(-118.2874196 34.0281688)'::geography;

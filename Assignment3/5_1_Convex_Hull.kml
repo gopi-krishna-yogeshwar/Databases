@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://earth.google.com/kml/2.0'>
+<Document>
+<Style id='z1'>
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Placemark><name>Trousdale Entrence</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2837474,34.0228997</coordinates></Point>
+</Placemark>
+<Placemark><name>Main entrance water work</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2868295,34.0214846</coordinates></Point>
+</Placemark>
+<Placemark><name>Epstein family plaza water work</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2890218,34.020297</coordinates></Point>
+</Placemark>
+<Placemark><name>Doheny Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2847078,34.0203262</coordinates></Point>
+</Placemark>
+<Placemark><name>Leavey Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2829834,34.0213201</coordinates></Point>
+</Placemark>
+<Placemark><name>Seaver Science Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.288788,34.0199482</coordinates></Point>
+</Placemark>
+<Placemark><name>Usc village water work</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2852642,34.0252617</coordinates></Point>
+</Placemark>
+<Placemark><name>Trousdale End</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2864772,34.0188723,</coordinates></Point>
+</Placemark>
+<Placemark><name>Watt way</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2888022,34.0186761,</coordinates></Point>
+</Placemark>
+<Placemark><name>RTH Cafeteria</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2900255,34.0197993</coordinates></Point>
+</Placemark>
+<Placemark><name>Panda express</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2861571,34.0202696</coordinates></Point>
+</Placemark>
+<Placemark><name>Starbucks</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2824448,34.0212978</coordinates></Point>
+</Placemark>
+<Placemark><name>Home</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2874196,34.0281688</coordinates></Point>
+</Placemark>
+
+<Placemark> 
+	<name> Convex Polygon</name>>
+	<Style>
+<PolyStyle>
+<color>ff0000ff</color>
+</PolyStyle>
+</Style>
+ <Polygon> <outerBoundaryIs>  <LinearRing>  
+  <coordinates>
+-118.2837474,34.0228997,0
+-118.2868295,34.0214846,0
+-118.2890218,34.020297,0
+-118.2847078,34.0203262,0
+-118.2829834,34.0213201,0
+-118.288788,34.0199482,0
+-118.2852642,34.0252617,0
+-118.2864772,34.0188723,0
+-118.2888022,34.0186761,0
+-118.2900255,34.0197993,0
+-118.2861571,34.0202696,0
+-118.2824448,34.0212978,0
+-118.2874196,34.0281688,0
+  </coordinates>
+ </LinearRing> </outerBoundaryIs> </Polygon>
+</Placemark>
+
+
+<Style id='z2'>
+<LineStyle>
+<color>ff0000ff</color>
+</LineStyle>
+</Style> 
+
+<Placemark> 
+    <name> Closest 1 - Village water works </name>
+    <description> Village water works</description>
+    <styleUrl>#z2</styleUrl>
+ <LineString>
+  <coordinates>
+-118.2874196,34.0281688,0 -118.2852642,34.0252617,0
+  </coordinates>
+ </LineString>
+
+</Placemark>
+<Placemark> 
+    <name> Closest 2 - Trousdale Entrence</name>
+    <description>Trousdale Entrence</description>
+    <styleUrl>#z2</styleUrl>
+<LineString>
+    <coordinates>
+        -118.2874196,34.0281688,0 -118.2837474,34.0228997,0
+    </coordinates>
+</LineString>
+</Placemark>
+
+<Placemark> 
+    <name> Closest 3 - Main entrance water work</name>
+    <description> Main entrance water work</description>
+    <styleUrl>#z2</styleUrl>
+<LineString>
+    <coordinates>
+        -118.2874196,34.0281688,0 -118.2868295,34.0214846,0
+    </coordinates>
+</LineString>
+</Placemark>
+<Placemark> 
+    <name> Closest 4 - Leavey Library</name>
+    <description> Leavey Library</description>
+    <styleUrl>#z2</styleUrl>
+<LineString>
+    <coordinates>
+        -118.2874196,34.0281688,0 -118.2829834,34.0213201,0
+    </coordinates>
+</LineString>
+</Placemark>
+
+
+</Document></kml>
